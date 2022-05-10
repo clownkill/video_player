@@ -6,17 +6,22 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <style>
     .player-container {
-      width: 800px;
-      height: 600px;
+      flex-direction: column;
+      display: flex;
     }
     .video-container {
-      width: 100%;
+      display: flex;
+      flex-grow: 1;
       height: 100%;
+      width: 100%;
     }
     .button-container {
+      display: flex;
       background-color: black;
+      margin: 5px;
+      padding: 5px;
     }
-    .play-pause-button {
+    .player-button {
       border: none;
       cursor: pointer;
       color: white;
@@ -29,13 +34,13 @@
   </style>
 </head>
 <body>
-  <div class="player-container shadow" id="player">
+  <div class="player-container shadow" style="width: 800px; height: 600px;" id="player">
     <div class="js-video-container video-container"></div>
     <div class="button-container">
-      <button class="js-play-button play-pause-button">
+      <button class="js-play-button player-button">
         <i class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button play-pause-button">
+      <button class="js-pause-button player-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
     </div>
