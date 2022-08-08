@@ -19,6 +19,8 @@
     }
     .viewing-progressbar {
       flex-grow: 2;
+      display: flex;
+      flex-direction: row;
     }
     .progressbar {
       background-color: #f8104d;
@@ -32,7 +34,9 @@
       background-color: #f8104d;
       border-radius: 50%;
       display: inline-block;
-      box-shadow: 0 0 0px 3px rgb(255, 255, 255);
+      box-shadow: 0 0 0 3px rgb(255, 255, 255);
+      margin: -21px 0 0 -4px;
+      align-self: center;
     }
     .player-container {
       flex-direction: column;
@@ -59,14 +63,11 @@
       background-color: transparent;
       font-size: 20px;
       line-height: 1.5;
-      margin: 0px 16px 5px 1px;
+      margin: 0 16px 5px 1px;
     }
     .shadow {
       background: black;
       box-shadow: 0 0 10px 5px rgba(0,0,0,0.7);
-    }
-    .button-placeholder {
-      flex-grow: 1;
     }
   </style>
 </head>
@@ -89,9 +90,8 @@
       <div class="viewing-panel">
         <div class="js-current-time viewing-time"></div>
         <div class="js-progress viewing-progressbar">
-          <div class="js-progress-slider progressbar">
-            <span class="dot"></span>
-          </div>
+          <div class="js-progress-slider progressbar"></div>
+          <span class="dot"></span>
         </div>
         <div class="js-duration veiwing-duration"></div>
       </div>
