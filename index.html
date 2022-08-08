@@ -21,11 +21,18 @@
       flex-grow: 2;
     }
     .progressbar {
-      flex-grow: 1;
       background-color: #f8104d;
       margin: 6px 0 0 9px;
       height: 6px;
       border-radius: 10px;
+    }
+    .dot {
+      height: 7px;
+      width: 7px;
+      background-color: #f8104d;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0px 3px rgb(255, 255, 255);
     }
     .player-container {
       flex-direction: column;
@@ -80,6 +87,7 @@
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
       <div class="viewing-panel">
+        <span class="dot"></span>
         <div class="js-current-time viewing-time"></div>
         <div class="js-progress viewing-progressbar">
           <div class="js-progress-slider progressbar"></div>
