@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    .viewing-panel{
+    .viewing-panel {
       flex-grow: 1;
       display: flex;
       flex-direction: row;
@@ -17,8 +17,15 @@
       color: white;
       font-family: 'Roboto', sans-serif;
     }
-    .viewing-progressbar{
+    .viewing-progressbar {
       flex-grow: 2;
+    }
+    .progressbar {
+      flex-grow: 1;
+      background-color: #f8104d;
+      margin: 6px 0 0 9px;
+      height: 6px;
+      border-radius: 10px;
     }
     .player-container {
       flex-direction: column;
@@ -75,9 +82,7 @@
       <div class="viewing-panel">
         <div class="js-current-time viewing-time"></div>
         <div class="js-progress viewing-progressbar">
-          <div class="js-progress-slider" style="background-color: #f8104d;">
-            Прогресс
-          </div>
+          <div class="js-progress-slider progressbar"></div>
         </div>
         <div class="js-duration veiwing-duration"></div>
       </div>
