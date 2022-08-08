@@ -7,6 +7,12 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
   <style>
+    .time-container{
+      display: flex;
+      flex-direction: row;
+      margin-left: 100px;
+      color: white;
+    }
     .player-container {
       flex-direction: column;
       display: flex;
@@ -46,6 +52,10 @@
 <body>
   <div class="player-container shadow" id="player">
     <div class="js-video-container video-container"></div>
+    <div class="time-container">
+      <div class="js-current-time"></div> -
+      <div class="js-duration"></div>
+    </div>
     <div class="button-container">
       <button class="js-play-button player-button">
         <i class="fa fa-play" aria-hidden="true"></i>
